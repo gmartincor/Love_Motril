@@ -3,22 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Descubre Motril - Motril</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love Motril - Lugares</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
-    <include src="./header.html"></include>
+
+    <include src="header.html"></include>
 
     <main>
-        <section>
-            <h2>Categorías</h2>
+        <section class="category-list" data-aos="fade-up">
+            <div class="card">
+                <img src="./imagenes/playadeponiente.jpg" alt="Playa de Poniente">
+                <h3><a href="detalle.html#lugar1">Playa de Poniente</a></h3>
+                <p>Una de las playas más hermosas de Motril, ideal para relajarse y disfrutar del mar.</p>
+            </div>
+            <div class="card">
+                <img src="./imagenes/puertodeportivo.jpg" alt="Puerto Deportivo">
+                <h3><a href="detalle.html#lugar2">Puerto Deportivo</a></h3>
+                <p>El corazón marítimo de la ciudad, con numerosos restaurantes y actividades acuáticas.</p>
+            </div>
+
         </section>
     </main>
 
-    <include src="./footer.html"></include>
+    <include src="footer.html"></include>
 
-    <script src="./js/scripts.js"></script>
+    <script type="module" src="./js/scripts.js"></script>
 </body>
 
 </html>

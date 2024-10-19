@@ -1,26 +1,26 @@
-/* Reset básico */
+/* Reseteo básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales */
+/* Tipografía */
 body {
-    font-family: 'Arial, sans-serif';
+    font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f5f5f5;
+    line-height: 1.6;
 }
 
-header,
-footer {
+/* Header */
+header {
     background-color: #004080;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
-    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -28,6 +28,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -37,30 +38,233 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-main {
-    padding: 20px;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-main img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
-footer p {
+/* Hero Section */
+.hero {
+    position: relative;
     text-align: center;
+    color: white;
 }
 
-/* Estilos para dispositivos móviles */
-@media (max-width: 600px) {
+.hero img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
+/* Sección de Categoría */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    margin: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    background-color: #004080;
+    color: #fff;
+    margin: 0;
+}
+
+.card h3 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card h3 a:hover {
+    text-decoration: underline;
+}
+
+.card p {
+    padding: 0 15px 15px 15px;
+}
+
+/* Detalle */
+.detalle {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.detalle img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.detalle h2 {
+    margin-bottom: 15px;
+    color: #004080;
+}
+
+.detalle ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Presentación */
+.presentation {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.presentation h2 {
+    margin-bottom: 15px;
+    color: #004080;
+}
+
+.presentation p {
+    margin-bottom: 15px;
+}
+
+.presentation img,
+.presentation video {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Enlaces */
+.links {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.links h2 {
+    margin-bottom: 15px;
+    color: #004080;
+}
+
+.links ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    .category-list {
+        flex-direction: column;
+        align-items: center;
     }
+
+    .card {
+        width: 90%;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+/* Efecto Zoom en Imágenes */
+.zoomed {
+    transform: scale(1.5);
+    transition: transform 0.3s;
+    z-index: 10;
+    position: relative;
 }

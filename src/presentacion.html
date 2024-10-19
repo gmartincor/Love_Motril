@@ -3,22 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Presentación - Motril </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love Motril - Presentación</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
-    <include src="./header.html"></include>
+
+    <include src="header.html"></include>
 
     <main>
-        <section>
-            <h2></h2>
+        <section class="presentation" data-aos="fade-up">
+            <h2>Sobre Love Motril</h2>
+            <p>Love Motril es un portal dedicado a mostrar lo mejor de nuestra ciudad. Nuestro objetivo es ofrecer
+                información detallada y actualizada sobre los lugares más emblemáticos, eventos, historia y cultura de
+                Motril.</p>
+            <p>Queremos que tanto residentes como visitantes puedan descubrir y disfrutar de todo lo que Motril tiene
+                para ofrecer. A través de descripciones precisas, imágenes y videos, buscamos enriquecer la experiencia
+                del usuario y fomentar el turismo local.</p>
+            <p>Nuestro compromiso es mantener el contenido del portal siempre actualizado y relevante, brindando una
+                herramienta útil para planificar visitas, conocer la historia y mantenerse informado sobre eventos y
+                actividades en la ciudad.</p>
+            <img src="./imagenes/presentacion.jpg" alt="Presentación del Portal">
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ign-082Adj8" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </section>
     </main>
 
-    <include src="./footer.html"></include>
 
-    <script src="./js/scripts.js"></script>
+    <include src="footer.html"></include>
+
+    <script type="module" src="./js/scripts.js"></script>
 </body>
 
 </html>
