@@ -6,50 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Love Motril - Detalles</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./imagenes/favicon-ico.png" type="image/png">
 </head>
 
 <body>
     <include src="header.html"></include>
 
     <main>
-        <!-- Detalle de Playa de poniente -->
+        <!-- Detalle de Playa de Poniente -->
         <article id="lugar1" class="detalle" data-aos="fade-up">
             <h2>Playa de Poniente</h2>
-            <img src="./imagenes/playaponiente-detalle.jpg" alt="Playa de Poniente">
+            <picture>
+                <source media="(max-width: 600px)" srcset="./imagenes/playa-poniente-mobile.jpg">
+                <source media="(min-width: 601px)" srcset="./imagenes/playa-poniente-desktop.jpg">
+                <img src="./imagenes/playa-poniente-desktop.jpg" alt="Vista panorámica de la Playa de Poniente">
+            </picture>
+
             <p>La Playa de Poniente es conocida por sus espectaculares puestas de sol y su arena de piedra fina. Es el
-                lugar perfecto para
-                disfrutar de un día soleado con la familia.</p>
+                lugar perfecto para disfrutar de un día soleado con la familia.</p>
             <p>Además de bañarse, los visitantes pueden practicar deportes acuáticos como el paddle surf y el kayak.</p>
             <p>El paseo marítimo cuenta con numerosos chiringuitos que ofrecen deliciosas tapas y bebidas refrescantes.
             </p>
-            <br>
+
             <ul>
                 <li>Ubicación: Frente al mar</li>
                 <li>Actividades: Gastronomía, deportes acuáticos, paseos</li>
                 <li>Mejor época para visitar: Primavera y verano</li>
             </ul>
+
+            <img src="./imagenes/actividades-playa.webp"
+                alt="Personas practicando deportes acuáticos en la Playa de Poniente">
+
+            <img src="./imagenes/paseo-nocturno.png"
+                alt="Paseo marítimo de la Playa de Poniente iluminado por la noche">
+
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/tfPGgQ_A1l0" frameborder="0"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tfPGgQ_A1l0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen title="Video de la Playa de Poniente"></iframe>
             </div>
+
             <p><a href="categoria.html">Volver a la lista de lugares</a></p>
         </article>
 
         <!-- Detalle del Puerto Deportivo -->
         <article id="lugar2" class="detalle" data-aos="fade-up">
             <h2>Puerto Deportivo</h2>
-            <img src="./imagenes/puertodeportivo-detalle.jpg" alt="Puerto Deportivo">
+            <picture>
+                <source media="(max-width: 600px)" srcset="./imagenes/puerto-deportivo-mobile.jpg">
+                <source media="(min-width: 601px)" srcset="./imagenes/puerto-deportivo-desktop.jpg">
+                <img src="./imagenes/puerto-deportivo-desktop.jpg" alt="Vista del Puerto Deportivo de Motril">
+            </picture>
+
             <p>El Puerto Deportivo de Motril es un bullicioso centro de actividades marítimas. Alberga una variedad de
                 embarcaciones, desde veleros hasta lanchas rápidas.</p>
             <p>Es un punto de encuentro para locales y turistas que buscan disfrutar de la gastronomía marina en sus
                 restaurantes y bares.</p>
             <p>El puerto también es sede de eventos y festivales que celebran la cultura náutica de la región.</p>
+
             <ul>
                 <li>Ubicación: Frente al mar</li>
                 <li>Actividades: Pesca, navegación, eventos</li>
                 <li>Mejor época para visitar: Todo el año</li>
             </ul>
+
+            <img src="./imagenes/evento-puerto.webp" alt="Evento en el Puerto Deportivo de Motril">
+
+            <img src="./imagenes/restaurante-puerto.png" alt="Restaurante en el Puerto Deportivo de Motril">
+
             <p><a href="categoria.html">Volver a la lista de lugares</a></p>
         </article>
 

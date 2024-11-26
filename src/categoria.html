@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Love Motril - Lugares</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./imagenes/favicon-ico.png" type="image/png">
 </head>
 
 <body>
@@ -15,12 +16,20 @@
     <main>
         <section class="category-list" data-aos="fade-up">
             <div class="card">
-                <img src="./imagenes/playadeponiente.jpg" alt="Playa de Poniente">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./imagenes/playa-poniente-mobile.jpg">
+                    <source media="(min-width: 601px)" srcset="./imagenes/playa-poniente-desktop.jpg">
+                    <img src="./imagenes/playa-poniente-desktop.jpg" alt="Vista panorámica de la Playa de Poniente">
+                </picture>
                 <h3><a href="detalle.html#lugar1">Playa de Poniente</a></h3>
                 <p>Una de las playas más hermosas de Motril, ideal para relajarse y disfrutar del mar.</p>
             </div>
             <div class="card">
-                <img src="./imagenes/puertodeportivo.jpg" alt="Puerto Deportivo">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./imagenes/puerto-deportivo-mobile.jpg">
+                    <source media="(min-width: 601px)" srcset="./imagenes/puerto-deportivo-desktop.jpg">
+                    <img src="./imagenes/puerto-deportivo-desktop.jpg" alt="Vista del Puerto Deportivo de Motril">
+                </picture>
                 <h3><a href="detalle.html#lugar2">Puerto Deportivo</a></h3>
                 <p>El corazón marítimo de la ciudad, con numerosos restaurantes y actividades acuáticas.</p>
             </div>

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Love Motril - Inicio</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./imagenes/favicon-ico.png" type="image/png">
+
 </head>
 
 <body>
@@ -14,7 +16,10 @@
 
     <main>
         <section class="hero" data-aos="fade-up">
-            <img src="./imagenes/motril-hero.jpg" alt="Vista de Motril">
+            <img src="./imagenes/motril-hero-large.jpg"
+                srcset="./imagenes/motril-hero-small.jpg 480w, ./imagenes/motril-hero-medium.jpg 800w, ./imagenes/motril-hero-large.jpg 1200w"
+                sizes="(max-width: 600px) 480px,(max-width: 900px) 800px, 1200px" alt="Vista de Motril"
+                class="clip-image">
             <div class="hero-text">
                 <h2>Descubre la belleza de Motril</h2>
                 <p>Explora los lugares más emblemáticos y conoce la historia de nuestra ciudad.</p>
