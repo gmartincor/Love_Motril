@@ -7,6 +7,7 @@
     <title>Love Motril - Detalles</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="icon" href="./imagenes/favicon-ico.png" type="image/png">
+    <script type="module" src="./js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -55,7 +56,8 @@
             <picture>
                 <source media="(max-width: 600px)" srcset="./imagenes/puerto-deportivo-mobile.jpg">
                 <source media="(min-width: 601px)" srcset="./imagenes/puerto-deportivo-desktop.jpg">
-                <img src="./imagenes/puerto-deportivo-desktop.jpg" alt="Vista del Puerto Deportivo de Motril">
+                <img src="./imagenes/puerto-deportivo-desktop.jpg" alt="Vista del Puerto Deportivo de Motril"
+                    loading="lazy">
             </picture>
 
             <p>El Puerto Deportivo de Motril es un bullicioso centro de actividades marítimas. Alberga una variedad de
@@ -70,9 +72,10 @@
                 <li>Mejor época para visitar: Todo el año</li>
             </ul>
 
-            <img src="./imagenes/evento-puerto.webp" alt="Evento en el Puerto Deportivo de Motril">
+            <img src="./imagenes/evento-puerto.webp" alt="Evento en el Puerto Deportivo de Motril" loading="lazy">
 
-            <img src="./imagenes/restaurante-puerto.png" alt="Restaurante en el Puerto Deportivo de Motril">
+            <img src="./imagenes/restaurante-puerto.png" alt="Restaurante en el Puerto Deportivo de Motril"
+                loading="lazy">
 
             <p><a href="categoria.html">Volver a la lista de lugares</a></p>
         </article>
@@ -80,8 +83,6 @@
     </main>
 
     <include src="footer.html"></include>
-
-    <script type="module" src="./js/scripts.js"></script>
 </body>
 
 </html>
